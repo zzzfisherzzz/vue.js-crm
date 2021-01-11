@@ -16,10 +16,9 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  components: {
+  computed: {
     color() {
       const colors = [
         "spinner-red-only",
