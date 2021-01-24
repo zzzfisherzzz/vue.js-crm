@@ -33,6 +33,12 @@ const router = new Router({
       component: () => import('../views/Categories.vue')
     },
     {
+      path: '/detail/:id',
+      name: 'detail',
+      meta: { layout: 'main', auth: true },
+      component: () => import('../views/Detail.vue')
+    },
+    {
       path: '/history',
       name: 'history',
       meta: { layout: 'main', auth: true },
