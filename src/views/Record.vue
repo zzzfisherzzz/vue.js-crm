@@ -94,6 +94,11 @@ import { required, minValue } from "vuelidate/lib/validators";
 import { mapGetters } from "vuex";
 export default {
   name: "record",
+  metaInfo() {
+    return {
+      title: this.$title("Menu_newRecord"),
+    };
+  },
   data: () => ({
     loading: true,
     select: null,
